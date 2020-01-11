@@ -7,7 +7,7 @@ include::feedback.adoc[]
 
 image::ea/Manual/generateDeck.png[]
 
-This task makes use of the https://github.com/asciidoctor/asciidoctor-reveal.js/[asciidoctor-reveal.js] backend to render your documents into a HTML based presentation.
+This task uses https://github.com/asciidoctor/asciidoctor-reveal.js/[asciidoctor-reveal.js] to render your documents into an HTML based presentation.
 
 This task is best used together with the <<exportPPT>> task.
 It creates a PowerPoint presentation and enriches it with reveal.js slide definitions in AsciiDoc within the speaker notes.
