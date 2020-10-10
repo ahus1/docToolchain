@@ -565,10 +565,9 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#_exportjirasprintchangelogissues">3.19. exportJiraSprintChangelogIssues</a></li>
 <li><a href="#_exportppt">3.20. exportPPT</a></li>
 <li><a href="#_exportexcel">3.21. exportExcel</a></li>
-<li><a href="#_exportmarkdown">3.22. exportMarkdown</a></li>
-<li><a href="#_exportopenapi">3.23. exportOpenAPI</a></li>
-<li><a href="#_htmlsanitycheck">3.24. htmlSanityCheck</a></li>
-<li><a href="#_dependencyupdates">3.25. dependencyUpdates</a></li>
+<li><a href="#_exportopenapi">3.22. exportOpenAPI</a></li>
+<li><a href="#_htmlsanitycheck">3.23. htmlSanityCheck</a></li>
+<li><a href="#_dependencyupdates">3.24. dependencyUpdates</a></li>
 </ul>
 </li>
 <li><a href="#_development">4. Development</a>
@@ -1289,6 +1288,8 @@ Blog-Posts: <a href="https://rdmueller.github.io/plantuml-gradle/">PlantUML with
             <span class="string"><span class="delimiter">'</span><span class="content">html</span><span class="delimiter">'</span></span> <span class="keyword">in</span> <span class="local-variable">it</span>.formats
         }.empty
     }
+
+<span class="comment">//    outputDir = file(targetDir + '/html/')</span>
 
     sources {
         sourceFiles.findAll {
@@ -4563,18 +4564,12 @@ use `gradle exportExcel` to re-export files
 </div>
 <hr>
 <div style="page-break-after: always;"></div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_exportmarkdown">3.22. exportMarkdown</h3>
 <div class="paragraph">
-<p>The <em>exportMarkdown</em> task can be used to include <a href="https://markdown.de">markdown</a> files into the documentation.</p>
+<p>Unresolved directive in manual/03_task_exportMarkdown.adoc - include::../../../build/docs/exportMarkdownDocs.adoc[]</p>
 </div>
-<div class="paragraph">
-<p>The task is scanning the directory <code>/src/docs</code> for markdown files (<code>*.md</code>) and converts them into AsciiDoc files. The converted files can then be referenced from within the <code>/build</code>-folder.</p>
 </div>
 <div class="sect3">
-<h4 id="_source_16">3.22.1. Source</h4>
+<h4 id="_source_16">3.21.2. Source</h4>
 <div class="listingblock">
 <div class="title">exportMarkdown.gradle</div>
 <div class="content">
@@ -4605,7 +4600,7 @@ use `gradle exportExcel` to re-export files
 </div>
 </div>
 <div class="sect2">
-<h3 id="_exportopenapi">3.23. exportOpenAPI</h3>
+<h3 id="_exportopenapi">3.22. exportOpenAPI</h3>
 <div class="imageblock right">
 <div class="content">
 <a class="image" href="https://github.com/docToolchain/docToolchain/edit/master/src/docs/manual/03_task_exportOpenApi.adoc"><img src="https://img.shields.io/badge/improve-this%20doc-orange.svg" alt="improve this%20doc orange"></a>
@@ -4629,7 +4624,7 @@ Currently it relies on <a href="https://github.com/OpenAPITools/openapi-generato
 </div>
 </div>
 <div class="sect3">
-<h4 id="_configuration_5">3.23.1. Configuration</h4>
+<h4 id="_configuration_5">3.22.1. Configuration</h4>
 <div class="listingblock">
 <div class="title">Config.groovy</div>
 <div class="content">
@@ -4649,7 +4644,7 @@ openApi.with {
 </div>
 </div>
 <div class="sect3">
-<h4 id="_source_17">3.23.2. Source</h4>
+<h4 id="_source_17">3.22.2. Source</h4>
 <div class="listingblock">
 <div class="title">exportOpenApi.gradle</div>
 <div class="content">
@@ -4691,7 +4686,7 @@ openApi.with {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_htmlsanitycheck">3.24. htmlSanityCheck</h3>
+<h3 id="_htmlsanitycheck">3.23. htmlSanityCheck</h3>
 <div class="imageblock right">
 <div class="content">
 <a class="image" href="https://github.com/docToolchain/docToolchain/edit/master/src/docs/manual/03_task_htmlSanityCheck.adoc"><img src="https://img.shields.io/badge/improve-this%20doc-orange.svg" alt="improve this%20doc orange"></a>
@@ -4742,7 +4737,7 @@ Blog-Post: <a href="https://rdmueller.github.io/htmlSanityCheck/">Automated Qual
 </table>
 </div>
 <div class="sect3">
-<h4 id="_source_18">3.24.1. Source</h4>
+<h4 id="_source_18">3.23.1. Source</h4>
 <div class="listingblock">
 <div class="title">htmlSanityCheck.gradle</div>
 <div class="content">
@@ -4764,7 +4759,7 @@ Blog-Post: <a href="https://rdmueller.github.io/htmlSanityCheck/">Automated Qual
 </div>
 </div>
 <div class="sect2">
-<h3 id="_dependencyupdates">3.25. dependencyUpdates</h3>
+<h3 id="_dependencyupdates">3.24. dependencyUpdates</h3>
 <div class="imageblock right">
 <div class="content">
 <a class="image" href="https://github.com/docToolchain/docToolchain/edit/master/src/docs/manual/03_task_dependencyUpdates.adoc"><img src="https://img.shields.io/badge/improve-this%20doc-orange.svg" alt="improve this%20doc orange"></a>
@@ -5810,7 +5805,7 @@ sprintChangelog.with {
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-10-09 20:51:20 UTC
+Last updated 2020-10-10 07:30:57 UTC
 </div>
 </div>
 </body>
